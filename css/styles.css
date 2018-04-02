@@ -22,6 +22,33 @@ html {
   justify-content: flex-start;
 }
 
+#sidebar .navbar-header {
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sidebar .navbar-header img {
+  width: 35px;
+}
+
+#sidebar .btn {
+  margin: 5px;
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#sidebar .nav-link {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+#sidebar .nav-link.dropdown-toggle::after {
+  margin-top: 9px;
+}
+
 /* Main Section */
 main {
   display: grid;
