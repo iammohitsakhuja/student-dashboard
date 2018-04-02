@@ -1,0 +1,21 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Sidebar */
+#sidebar {
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
