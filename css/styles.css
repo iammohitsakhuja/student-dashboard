@@ -51,6 +51,7 @@ html {
 
 /* Main Section */
 main {
+  grid-area: main;
   display: grid;
   grid-template-areas: "topbar"
                        "content";
