@@ -21,7 +21,7 @@ html {
   flex-direction: column;
   align-items: stretch;
   justify-content: flex-start;
-  background-image: linear-gradient(rgba(40, 46, 92, 0.7), rgba(2, 12, 34, 0.7)), url("../img/sidebar-pic.jpg");
+  background-image: linear-gradient(rgba(1, 7, 46, 0.4), rgba(3, 38, 114, 0.7)), url("../img/sidebar-4.jpg");
 }
 
 #sidebar .navbar-header {
@@ -40,6 +40,11 @@ html {
   padding: 10px;
   text-transform: uppercase;
   text-align: left;
+  background: linear-gradient(rgba(238, 238, 238, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+#sidebar .btn:hover {
+  background: linear-gradient(rgba(189, 186, 186, 0.623), rgba(255, 255, 255, 0.3));
 }
 
 #sidebar .nav-link {
