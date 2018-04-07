@@ -36,7 +36,7 @@ html {
 }   
 
 #sidebar .btn {
-  margin: 5px;
+  margin: 7px 0;
   padding: 10px;
   text-transform: uppercase;
   text-align: left;
@@ -48,7 +48,7 @@ html {
 }
 
 #sidebar .nav-link.dropdown-toggle::after {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 
 /* Main Section */
