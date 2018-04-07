@@ -298,10 +298,13 @@
             </h6>
             <h4 class="card-title">Eat. Sleep. Code. Repeat.</h4>
             <p class="card-text">
-              Where do savvy developers, hackers, tech builders and makers go to test their mettle and push the very limits of their creativity and endurance? To a Hackathon! where else?
+              Where do savvy developers, hackers, tech builders and makers go to test their mettle and push the very limits of their creativity
+              and endurance? To a Hackathon! where else?
             </p>
             <p class="card-text">
-              We're psyched to announce that the <span class="red-text">Developer Student Club, Chitkara University</span> presents <span class="red-text">Octahacks</span> on April 14-15 at Chitkara University. Come be a part of it! Register below.
+              We're psyched to announce that the
+              <span class="red-text">Developer Student Club, Chitkara University</span> presents
+              <span class="red-text">Octahacks</span> on April 14-15 at Chitkara University. Come be a part of it! Register below.
             </p>
           </section>
           <section class="card-footer text-right">
@@ -339,7 +342,28 @@
             </p>
           </section>
           <section class="card-footer text-right">
-            <button class="btn btn-deep-purple">Watch video</button>
+            <!-- Triggers the modal -->
+            <button class="btn btn-deep-purple" data-toggle="modal" data-target="#modalGoPro">Watch video</button>
+          </section>
+        </article>
+
+        <!-- Modal for video -->
+        <article class="modal fade" id="modalGoPro" tabindex="-1" aria-hidden="true">
+          <section class="modal-dialog modal-lg">
+            <section class="modal-content">
+              <!--Body-->
+              <section class="modal-body mb-0 p-0">
+                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YJPgoOCOBFg" allowfullscreen></iframe>
+                </div>
+              </section>
+
+              <!--Footer-->
+              <section class="modal-footer justify-content-center flex-column flex-md-row">
+                <span class="mr-4">JK. Lalu sir is too cool for that. Look at those mountains though!</span>
+                <button class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+              </section>
+            </section>
           </section>
         </article>
 
