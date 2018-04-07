@@ -7,7 +7,7 @@ html {
 /* Global */
 .wrapper {
   display: grid;
-  grid-template-columns: minmax(200px, 1fr) 5fr;
+  grid-template-columns: 270px 1fr;
   grid-template-areas: "sidebar main";
   background-color: rgb(241, 241, 241);
 }
@@ -35,7 +35,7 @@ html {
 }
 
 #sidebar .btn {
-  margin: 5px;
+  margin: 7px 0;
   padding: 10px;
   text-transform: uppercase;
   text-align: left;
@@ -47,7 +47,7 @@ html {
 }
 
 #sidebar .nav-link.dropdown-toggle::after {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 
 /* Main Section */

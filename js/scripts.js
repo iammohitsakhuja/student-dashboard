@@ -30,7 +30,7 @@ function toggle_sidebar() {
 /* Show sidebar */
 function show_sidebar() {
 	$("#sidebar").css("display", "flex");
-	$(".wrapper").css("grid-template-columns", "minmax(200px, 1fr) 5fr");
+	$(".wrapper").css("grid-template-columns", "270px 1fr");
 	$(".wrapper").css("grid-template-areas", "'sidebar main'");
 }
 
