@@ -21,7 +21,7 @@ html {
   flex-direction: column;
   align-items: stretch;
   justify-content: flex-start;
-  background-image: url("./img/sidebar-4.jpg");
+  background-image: linear-gradient(rgba(40, 46, 92, 0.7), rgba(2, 12, 34, 0.7)), url("../img/sidebar-pic.jpg");
 }
 
 #sidebar .navbar-header {
@@ -33,7 +33,7 @@ html {
 
 #sidebar .navbar-header img {
   width: 35px;
-}   
+}
 
 #sidebar .btn {
   margin: 7px 0;
