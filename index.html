@@ -7,10 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Student | Dashboard</title>
 
+  <!-- Normalize browser inconsistencies -->
+  <link rel="stylesheet" href="./css/normalize.css">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <!-- Font Awesome -->
   <script defer src="./js/fontawesome-all.min.js"></script>
+  <!-- MD Bootstrap -->
+  <link rel="stylesheet" href="./css/mdb.min.css">
   <!-- Custom stylesheet -->
   <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -82,17 +86,62 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-header">
-          <h5 class="navbar-brand">Student #34</h5>
+          <h5 class="navbar-brand m-1">Student #34</h5>
         </div>
       </nav>
 
       <!-- Content -->
       <div class="content">
 
+        <!-- First card -->
         <article class="card">
           <section class="card-header">
             <img src="./img/face-1.jpg" class="rounded-circle" alt="Profile picture">
-            <h4 class="card-title">Teacher 1</h4>
+            <h4 class="card-title m-2">Teacher 1</h4>
+          </section>
+          <section class="card-body">
+            <h6>Resource uploaded</h6>
+            <p class="card-text text-secondary">
+              <a href="#" target="_blank">Teacher 1</a> has uploaded the second assignment for DBMS
+            </p>
+          </section>
+          <section class="card-footer text-right">
+            <button class="btn btn-primary">View assignment</button>
+          </section>
+        </article>
+
+        <!-- Second card -->
+        <article class="card">
+          <section class="card-header">
+            <img src="./img/face-1.jpg" class="rounded-circle" alt="Profile picture">
+            <h4 class="card-title m-2">Teacher 2</h4>
+          </section>
+          <section class="card-body">
+            <h6>Attendance updated</h6>
+            <p class="card-text text-secondary">
+              Teacher 2 has updated the attendance for PSTC till the date 29-03-2018
+            </p>
+          </section>
+          <section class="card-footer text-right">
+            <button class="btn btn-primary">Button</button>
+          </section>
+        </article>
+
+        <!-- Image card -->
+        <article class="card">
+          <img src="./img/explore.jpg" alt="Poster for Explore Fest" class="img-fluid">
+          <section class="view-overlay">
+            <a href="#">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </section>
+        </article>
+
+        <!-- Third card -->
+        <article class="card">
+          <section class="card-header">
+            <img src="./img/face-1.jpg" class="rounded-circle" alt="Profile picture">
+            <h4 class="card-title m-2">Teacher 3</h4>
           </section>
           <section class="card-body"></section>
           <section class="card-footer text-right">
@@ -100,10 +149,11 @@
           </section>
         </article>
 
+        <!-- Fourth card -->
         <article class="card">
           <section class="card-header">
             <img src="./img/face-1.jpg" class="rounded-circle" alt="Profile picture">
-            <h4 class="card-title">Teacher 2</h4>
+            <h4 class="card-title m-2">Teacher 4</h4>
           </section>
           <section class="card-body"></section>
           <section class="card-footer text-right">
@@ -111,16 +161,43 @@
           </section>
         </article>
 
+        <!-- Fifth card -->
         <article class="card">
           <section class="card-header">
             <img src="./img/face-1.jpg" class="rounded-circle" alt="Profile picture">
-            <h4 class="card-title">Teacher 3</h4>
+            <h4 class="card-title m-2">Teacher 5</h4>
           </section>
           <section class="card-body"></section>
           <section class="card-footer text-right">
             <button class="btn btn-primary">Button</button>
           </section>
         </article>
+
+        <!-- Sixth card -->
+        <article class="card">
+          <section class="card-header">
+            <img src="./img/face-1.jpg" class="rounded-circle" alt="Profile picture">
+            <h4 class="card-title m-2">Teacher 6</h4>
+          </section>
+          <section class="card-body"></section>
+          <section class="card-footer text-right">
+            <button class="btn btn-primary">Button</button>
+          </section>
+        </article>
+
+        <!-- Seventh card -->
+        <article class="card">
+          <section class="card-header">
+            <img src="./img/face-1.jpg" class="rounded-circle" alt="Profile picture">
+            <h4 class="card-title m-2">Teacher 7</h4>
+          </section>
+          <section class="card-body"></section>
+          <section class="card-footer text-right">
+            <button class="btn btn-primary">Button</button>
+          </section>
+        </article>
+
+
       </div>
     </main>
   </div>
