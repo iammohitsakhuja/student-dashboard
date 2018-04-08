@@ -4,7 +4,10 @@ $(function () {
 	// detect resize of window
 	$(window).resize(function () {
 		var width = $(window).width();
-		if (width > 768) {
+		if (width < 768) {
+			hide_sidebar();
+		}
+		else {
 			show_sidebar();
 		}
 	});
