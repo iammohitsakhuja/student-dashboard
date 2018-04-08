@@ -95,12 +95,18 @@
       <div class="content">
 
         <!-- First card -->
-        <article class="card">
+        <article class="card card-cascade wider reverse my-4">
           <section class="card-header">
             <img src="./img/teachers/snoop-dogg.png" class="rounded-circle" alt="Profile picture">
             <h4 class="card-title m-2">Snoop Dogg</h4>
           </section>
-          <section class="card-body">
+          <section class="view overlay">
+            <img src="./img/card-img/art-of-living.jpg" alt="Trees" class="img-fluid">
+            <a href="#">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </section>
+          <section class="card-body text-center">
             <h6 class="indigo-text darken-4">
               <i class="fas fa-book"></i>
               Resource
@@ -110,14 +116,6 @@
               Snoop Dogg has uploaded the assignment for the
               <span class="pink-text">Art of Living amongst trees.</span>
             </p>
-          </section>
-          <section class="view overlay">
-            <img src="./img/card-img/art-of-living.jpg" alt="Trees" class="img-fluid">
-            <a href="#">
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </section>
-          <section class="card-footer text-right">
             <button class="btn btn-outline-indigo darken-4">View assignment</button>
           </section>
         </article>
@@ -146,7 +144,7 @@
         </article>
 
         <!-- Explore image -->
-        <article class="card">
+        <article class="card card-cascade wider reverse my-4">
           <!-- Card image -->
           <section class="view overlay">
             <img src="./img/card-img/explore.jpg" class="img-fluid" alt="Explore Fest poster">
@@ -156,7 +154,7 @@
           </section>
 
           <!-- Card body -->
-          <section class="card-body">
+          <section class="card-body text-center">
             <h5 class="pink-text">
               <i class="fas fa-chess-queen"></i>
               Event
@@ -280,6 +278,36 @@
           </section>
         </article>
 
+        <!-- Hackathon card -->
+        <article class="card card-cascade wider reverse my-4">
+          <!-- Card image -->
+          <section class="view overlay">
+            <img src="./img/card-img/octahacks.jpg" class="img-fluid" alt="Octahacks poster">
+            <a href="https://www.octahacks.tech/" target="_blank">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </section>
+
+          <!-- Card body -->
+          <section class="card-body text-center">
+            <h6 class="pink-text darken-4">
+              <i class="fas fa-chess-queen"></i>
+              Event
+            </h6>
+            <h4 class="card-title">Eat. Sleep. Code. Repeat.</h4>
+            <p class="card-text">
+              Where do savvy developers, hackers, tech builders and makers go to test their mettle and push the very limits of their creativity
+              and endurance? To a Hackathon! where else?
+            </p>
+            <p class="card-text">
+              We're psyched to announce that the
+              <span class="red-text">Developer Student Club, Chitkara University</span> presents
+              <span class="red-text">Octahacks</span> on April 14-15 at Chitkara University. Come be a part of it! Register below.
+            </p>
+            <button class="btn btn-outline-unique">Register</button>
+          </section>
+        </article>
+
         <!-- Sixth card -->
         <article class="card">
           <section class="card-header">
@@ -310,7 +338,28 @@
             </p>
           </section>
           <section class="card-footer text-right">
-            <button class="btn btn-deep-purple">Watch video</button>
+            <!-- Triggers the modal -->
+            <button class="btn btn-deep-purple" data-toggle="modal" data-target="#modalNorway">Watch video</button>
+          </section>
+        </article>
+
+        <!-- Modal for video -->
+        <article class="modal fade" id="modalNorway" tabindex="-1" aria-hidden="true">
+          <section class="modal-dialog modal-lg">
+            <section class="modal-content">
+              <!--Body-->
+              <section class="modal-body mb-0 p-0">
+                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YJPgoOCOBFg" allowfullscreen></iframe>
+                </div>
+              </section>
+
+              <!--Footer-->
+              <section class="modal-footer justify-content-center flex-column flex-md-row">
+                <span class="mr-4">JK. Lalu sir is too cool for that. Look at those mountains though!</span>
+                <button class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+              </section>
+            </section>
           </section>
         </article>
 
