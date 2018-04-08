@@ -71,6 +71,29 @@ main {
   width: 100%;
   display: flex;
   margin-bottom: 30px;
+  line-height: 1.8;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 2, 7, 0.8));
+}
+
+#topbar button {
+  color: white;
+}
+
+#topbar-items .nav-link {
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: white;
+}
+
+#topbar-items .nav-link span {
+  margin-right: 7px;
+  margin-left: 7px;
+}
+
+#topbar-items img {
+  width: 30px;
+  height: 30px;
 }
 
 /* Content */
@@ -133,10 +156,6 @@ main {
   .wrapper {
     grid-template-columns: none;
     grid-template-areas: main;
-  }
-
-  #topbar {
-    justify-content: space-between;
   }
 
   .content .card {
