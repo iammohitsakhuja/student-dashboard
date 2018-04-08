@@ -20,7 +20,7 @@
   <style>
     .content .card {
       min-width: 960px;
-      width: 70%;
+      width: 85%;
     }
   </style>
 </head>
@@ -88,200 +88,163 @@
     <!-- Main -->
     <main>
       <!-- Topbar -->
-      <nav id="topbar" class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
-        <button id="topbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="collapse">
-          <span class="navbar-toggler-icon"></span>
+      <nav id="topbar" class="navbar navbar-expand-md sticky-top">
+        <!-- sidebar toggle button -->
+        <button id="topbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse">
+          <span class="fas fa-align-left"></span>
         </button>
-        <div class="navbar-header">
-          <h5 class="navbar-brand m-1">Student #34</h5>
+        <!-- topbar items toggle button -->
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#topbar-items">
+          <span class="fas fa-ellipsis-v"></span>
+        </button>
+        <!-- topbar items -->
+        <div class="navbar-collapse collapse" id="topbar-items">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light" href="#">
+                <i class="fa fa-envelope"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light" href="#">
+                <i class="fas fa-beer"></i>
+                <span>Button</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link waves-effect waves-light dropdown-toggle" id="dropdown-items" data-toggle="dropdown">
+                <img src="img/face-1.jpg" class="rounded-circle" alt="profile picture">
+              </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-secondary">
+                <a class="dropdown-item waves-effect waves-light" href="#">Something 1</a>
+                <a class="dropdown-item waves-effect waves-light" href="#">Something 1</a>
+                <a class="dropdown-item waves-effect waves-light" href="#">Something 1</a>
+              </div>
+            </li>
+          </ul>
         </div>
       </nav>
 
       <!-- Content -->
       <div class="content">
+        <!-- Card -->
+        <article class="card card-cascade narrower">
+          <!-- Card heading -->
+          <section class="view gradient-card-header blue-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-center align-items-center">
+              <span class="white-text mx-3">Attendance</span>
+          </section>
 
+          <!-- Card content -->
+          <section class="px-4">
+            <!-- Table -->
+            <div class="table-wrapper">
+              <table class="table table-hover mb-0">
+                  <!-- Table head -->
+                  <thead>
+                    <tr>
+                      <th class="th-md">
+                        <a href="#">Subject Code<i class="fa fa-sort ml-1"></i></a>
+                      </th>
+                      <th class="th-md">
+                        <a href="#">Subject Name<i class="fa fa-sort ml-1"></i></a>
+                      </th>
+                      <th class="th-md">
+                        <a href="#">Teacher<i class="fa fa-sort ml-1"></i></a>
+                      </th>
+                      <th class="th-md">
+                        <a href="#">From<i class="fa fa-sort ml-1"></i></a>
+                      </th>
+                      <th class="th-md">
+                        <a href="#">To<i class="fa fa-sort ml-1"></i></a>
+                      </th>
+                      <th class="th-md">
+                        <a href="#">Attended<i class="fa fa-sort ml-1"></i></a>
+                      </th>
+                      <th class="th-md">
+                        <a href="#">DL<i class="fa fa-sort ml-1"></i></a>
+                      </th>
+                      <th class="th-md">
+                        <a href="#">ML<i class="fa fa-sort ml-1"></i></a>
+                      </th>
+                      <th class="th-md">
+                        <a href="#">Delivered<i class="fa fa-sort ml-1"></i></a>
+                      </th>
+                      <th class="th-md">
+                        <a href="#">%age<i class="fa fa-sort ml-1"></i></a>
+                      </th>
+                      <th class="th-md">
+                        <a href="#">Total approved DL<i class="fa fa-sort ml-1"></i></a>
+                      </th>
+                    </tr>
+                  </thead>
 
-        <!--Top Table UI-->
-        <div class="card p-2 mb-5">
-
-          <!--Grid row-->
-          <div class="row">
-
-              <!--Grid column-->
-              <div class="col-lg-3 col-md-12">
-
-                  <!--Name-->
-                  <select class="mdb-select colorful-select dropdown-primary mx-2">
-                      <option value="" disabled selected>Bulk actions</option>
-                      <option value="1">Delate</option>
-                      <option value="2">Export</option>
-                      <option value="3">Change segment</option>
-                  </select>
-
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-lg-3 col-md-6">
-
-                  <!--Blue select-->
-                  <select class="mdb-select colorful-select dropdown-primary mx-2">
-                      <option value="" disabled selected>Show only</option>
-                      <option value="1">All <span> (2000)</span></option>
-                      <option value="2">Never opened <span> (200)</span></option>
-                      <option value="3">Opened but unanswered <span> (1800)</span></option>
-                      <option value="4">Answered <span> (200)</span></option>
-                      <option value="5">Unsunscribed <span> (50)</span></option>
-                  </select>
-                  <!--/Blue select-->
-
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-lg-3 col-md-6">
-
-                  <!--Blue select-->
-                  <select class="mdb-select colorful-select dropdown-primary mx-2">
-                      <option value="" disabled selected>Filter segments</option>
-                      <option value="1">Contacts in no segments <span> (100)</span></option>
-                      <option value="1">Segment 1 <span> (2000)</span></option>
-                      <option value="2">Segment 2 <span> (1000)</span></option>
-                      <option value="3">Segment 3 <span> (4000)</span></option>
-                  </select>
-                  <!--/Blue select-->
-
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-lg-3 col-md-6">
-
-                  <form class="form-inline mt-2 ml-2">
-                      <input class="form-control my-0 py-0" type="text" placeholder="Search" style="max-width: 150px;">
-                      <button class="btn btn-sm btn-primary ml-2 px-1"><i class="fa fa-search"></i>  </button>
-                  </form>
-
-              </div>
-              <!--Grid column-->
-
-          </div>
-          <!--Grid row-->
-
-      </div>
-      <!--Top Table UI-->
-
-      <div class="card card-cascade narrower">
-
-          <!--Card image-->
-          <div class="view gradient-card-header blue-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-between align-items-center">
-
-              <div>
-                  <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"><i class="fa fa-th-large mt-0"></i></button>
-                  <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"><i class="fa fa-columns mt-0"></i></button>
-              </div>
-
-              <a href="" class="white-text mx-3">Table name</a>
-
-              <div>
-                  <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"><i class="fa fa-pencil mt-0"></i></button>
-                  <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"><i class="fa fa-remove mt-0"></i></button>
-                  <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"><i class="fa fa-info-circle mt-0"></i></button>
-              </div>
-
-          </div>
-          <!--/Card image-->
-
-          <div class="px-4">
-
-              <div class="table-wrapper">
-                  <!--Table-->
-                  <table class="table table-hover mb-0">
-
-                      <!--Table head-->
-                      <thead>
-                          <tr>
-                              <th>
-                                  <input type="checkbox" id="checkbox">
-                                  <label for="checkbox" class="mr-2 label-table"></label>
-                              </th>
-                              <th class="th-lg"><a>First Name <i class="fa fa-sort ml-1"></i></a></th>
-                              <th class="th-lg"><a href="">Last Name<i class="fa fa-sort ml-1"></i></a></th>
-                              <th class="th-lg"><a href="">Username<i class="fa fa-sort ml-1"></i></a></th>
-                              <th class="th-lg"><a href="">Username<i class="fa fa-sort ml-1"></i></a></th>
-                              <th class="th-lg"><a href="">Username<i class="fa fa-sort ml-1"></i></a></th>
-                              <th class="th-lg"><a href="">Username<i class="fa fa-sort ml-1"></i></a></th>
-                          </tr>
-                      </thead>
-                      <!--Table head-->
-
-                      <!--Table body-->
-                      <tbody>
-                          <tr>
-                              <th scope="row">
-                                  <input type="checkbox" id="checkbox1">
-                                  <label for="checkbox1" class="label-table"></label>
-                              </th>
-                              <td>Mark</td>
-                              <td>Otto</td>
-                              <td>@mdo</td>
-                              <td>Mark</td>
-                              <td>Otto</td>
-                              <td>@mdo</td>
-                          </tr>
-                          <tr>
-                              <th scope="row">
-                                  <input type="checkbox" id="checkbox2">
-                                  <label for="checkbox2" class="label-table"></label>
-                              </th>
-                              <td>Jacob</td>
-                              <td>Thornton</td>
-                              <td>@fat</td>
-                              <td>Jacob</td>
-                              <td>Thornton</td>
-                              <td>@fat</td>
-                          </tr>
-                          <tr>
-                              <th scope="row">
-                                  <input type="checkbox" id="checkbox3">
-                                  <label for="checkbox3" class="label-table"></label>
-                              </th>
-                              <td>Larry</td>
-                              <td>the Bird</td>
-                              <td>@twitter</td>
-                              <td>Larry</td>
-                              <td>the Bird</td>
-                              <td>@twitter</td>
-                          </tr>
-                          <tr>
-                              <th scope="row">
-                                  <input type="checkbox" id="checkbox4">
-                                  <label for="checkbox4" class="label-table"></label>
-                              </th>
-                              <td>Paul</td>
-                              <td>Topolski</td>
-                              <td>@P_Topolski</td>
-                              <td>Paul</td>
-                              <td>Topolski</td>
-                              <td>@P_Topolski</td>
-                          </tr>
-                          <tr>
-                              <th scope="row">
-                                  <input type="checkbox" id="checkbox5">
-                                  <label for="checkbox5" class="label-table"></label>
-                              </th>
-                              <td>Larry</td>
-                              <td>the Bird</td>
-                              <td>@twitter</td>
-                              <td>Larry</td>
-                              <td>the Bird</td>
-                              <td>@twitter</td>
-                          </tr>
-                      </tbody>
-                      <!--Table body-->
-                  </table>
-                  <!--Table-->
-              </div>
+                  <!--Table body-->
+                  <tbody>
+                      <tr>
+                          <th scope="row">
+                              <input type="checkbox" id="checkbox1">
+                              <label for="checkbox1" class="label-table"></label>
+                          </th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">
+                              <input type="checkbox" id="checkbox2">
+                              <label for="checkbox2" class="label-table"></label>
+                          </th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">
+                              <input type="checkbox" id="checkbox3">
+                              <label for="checkbox3" class="label-table"></label>
+                          </th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">
+                              <input type="checkbox" id="checkbox4">
+                              <label for="checkbox4" class="label-table"></label>
+                          </th>
+                          <td>Paul</td>
+                          <td>Topolski</td>
+                          <td>@P_Topolski</td>
+                          <td>Paul</td>
+                          <td>Topolski</td>
+                          <td>@P_Topolski</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">
+                              <input type="checkbox" id="checkbox5">
+                              <label for="checkbox5" class="label-table"></label>
+                          </th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                      </tr>
+                  </tbody>
+                  <!--Table body-->
+              </table>
+            </div>
 
               <hr class="my-0">
 
@@ -337,8 +300,8 @@
               </div>
               <!--Bottom Table UI-->
 
-          </div>
-        </div>
+          </section>
+        </article>
 
       </div>
     </main>
@@ -351,6 +314,7 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script src="js/mdb.min.js"></script>
   <!-- Custom script -->
   <script src="./js/scripts.js"></script>
 </body>
