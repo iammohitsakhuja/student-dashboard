@@ -138,4 +138,8 @@ main {
   #topbar {
     justify-content: space-between;
   }
+
+  .content .card {
+    width: calc(100% - 25px);
+  }
 }
