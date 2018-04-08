@@ -132,48 +132,70 @@
         <article class="card card-cascade narrower">
           <!-- Card heading -->
           <section class="view gradient-card-header blue-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-center align-items-center">
-              <span class="white-text mx-3">Attendance</span>
+            <span class="white-text mx-3">Attendance</span>
           </section>
 
           <!-- Card content -->
           <section class="px-4">
             <!-- Table -->
-            <div class="table-wrapper">
+            <section class="table-wrapper">
               <table class="table table-hover mb-0">
                 <thead>
                   <tr>
                     <th class="th-md">
-                      <a href="#">Subject Code<i class="fa fa-sort ml-1"></i></a>
+                      <a href="#">Subject Code
+                        <i class="fa fa-sort ml-1"></i>
+                      </a>
                     </th>
                     <th class="th-md">
-                      <a href="#">Subject Name<i class="fa fa-sort ml-1"></i></a>
+                      <a href="#">Subject Name
+                        <i class="fa fa-sort ml-1"></i>
+                      </a>
                     </th>
                     <th class="th-md">
-                      <a href="#">Teacher<i class="fa fa-sort ml-1"></i></a>
+                      <a href="#">Teacher
+                        <i class="fa fa-sort ml-1"></i>
+                      </a>
                     </th>
                     <th class="th-md">
-                      <a href="#">From<i class="fa fa-sort ml-1"></i></a>
+                      <a href="#">From
+                        <i class="fa fa-sort ml-1"></i>
+                      </a>
                     </th>
                     <th class="th-md">
-                      <a href="#">To<i class="fa fa-sort ml-1"></i></a>
+                      <a href="#">To
+                        <i class="fa fa-sort ml-1"></i>
+                      </a>
                     </th>
                     <th class="th-md">
-                      <a href="#">Attended<i class="fa fa-sort ml-1"></i></a>
+                      <a href="#">Attended
+                        <i class="fa fa-sort ml-1"></i>
+                      </a>
                     </th>
                     <th class="th-md">
-                      <a href="#">DL<i class="fa fa-sort ml-1"></i></a>
+                      <a href="#">DL
+                        <i class="fa fa-sort ml-1"></i>
+                      </a>
                     </th>
                     <th class="th-md">
-                      <a href="#">ML<i class="fa fa-sort ml-1"></i></a>
+                      <a href="#">ML
+                        <i class="fa fa-sort ml-1"></i>
+                      </a>
                     </th>
                     <th class="th-md">
-                      <a href="#">Delivered<i class="fa fa-sort ml-1"></i></a>
+                      <a href="#">Delivered
+                        <i class="fa fa-sort ml-1"></i>
+                      </a>
                     </th>
                     <th class="th-md">
-                      <a href="#">%age<i class="fa fa-sort ml-1"></i></a>
+                      <a href="#">%age
+                        <i class="fa fa-sort ml-1"></i>
+                      </a>
                     </th>
                     <th class="th-md">
-                      <a href="#">Total approved DL<i class="fa fa-sort ml-1"></i></a>
+                      <a href="#">Total approved DL
+                        <i class="fa fa-sort ml-1"></i>
+                      </a>
                     </th>
                   </tr>
                 </thead>
@@ -246,62 +268,49 @@
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </section>
 
-              <hr class="my-0">
+            <hr class="my-0">
 
-              <!--Bottom Table UI-->
-              <div class="d-flex justify-content-between">
-
-                  <!--Name-->
-                  <select class="mdb-select colorful-select dropdown-primary mt-2 hidden-md-down">
-                      <option value="" disabled >Rows number</option>
-                      <option value="1" selected>10 rows</option>
-                      <option value="2">25 rows</option>
-                      <option value="3">50 rows</option>
-                      <option value="4">100 rows</option>
-                  </select>
-
-                  <!--Pagination -->
-                  <nav class="my-4">
-                      <ul class="pagination pagination-circle pg-blue mb-0">
-
-                          <!--First-->
-                          <li class="page-item disabled"><a class="page-link">First</a></li>
-
-                          <!--Arrow left-->
-                          <li class="page-item disabled">
-                              <a class="page-link" aria-label="Previous">
-                              <span aria-hidden="true">&laquo;</span>
-                              <span class="sr-only">Previous</span>
-                          </a>
-                          </li>
-
-                          <!--Numbers-->
-                          <li class="page-item active"><a class="page-link">1</a></li>
-                          <li class="page-item"><a class="page-link">2</a></li>
-                          <li class="page-item"><a class="page-link">3</a></li>
-                          <li class="page-item"><a class="page-link">4</a></li>
-                          <li class="page-item"><a class="page-link">5</a></li>
-
-                          <!--Arrow right-->
-                          <li class="page-item">
-                              <a class="page-link" aria-label="Next">
-                              <span aria-hidden="true">&raquo;</span>
-                              <span class="sr-only">Next</span>
-                          </a>
-                          </li>
-
-                          <!--First-->
-                          <li class="page-item"><a class="page-link">Last</a></li>
-
-                      </ul>
-                  </nav>
-                  <!--/Pagination -->
-
-              </div>
-              <!--Bottom Table UI-->
-
+            <!-- Semester page links -->
+            <section>
+              <nav class="my-4">
+                <ul class="pagination pagination-circle pg-blue mb-0">
+                  <li class="page-item disabled">
+                    <a class="page-link">Next</a>
+                  </li>
+                  <li class="page-item disabled">
+                    <a class="page-link" aria-label="Next">
+                      <span aria-hidden="true">&laquo;</span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </li>
+                  <!-- Semester numbers -->
+                  <li class="page-item active">
+                    <a class="page-link">4</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link">1</a>
+                  </li>
+                  <!-- Right Arrow -->
+                  <li class="page-item">
+                    <a class="page-link" aria-label="Previous">
+                      <span aria-hidden="true">&raquo;</span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link">Previous</a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
           </section>
         </article>
 
