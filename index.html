@@ -82,12 +82,41 @@
     <!-- Main -->
     <main>
       <!-- Topbar -->
-      <nav id="topbar" class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
-        <button id="topbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="collapse">
-          <span class="navbar-toggler-icon"></span>
+      <nav id="topbar" class="navbar navbar-expand-md sticky-top">
+        <!-- sidebar toggle button -->
+        <button id="topbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse">
+          <span class="fas fa-align-left"></span>
         </button>
-        <div class="navbar-header">
-          <h5 class="navbar-brand m-1">Student #34</h5>
+        <!-- topbar items toggle button -->
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#topbar-items">
+          <span class="fas fa-ellipsis-v"></span>
+        </button>
+        <!-- topbar items -->
+        <div class="navbar-collapse collapse" id="topbar-items">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light" href="#">
+                <i class="fa fa-envelope"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light" href="#">
+                <i class="fas fa-beer"></i>
+                <span>Button</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link waves-effect waves-light dropdown-toggle" id="dropdown-items" data-toggle="dropdown">
+                <img src="img/face-1.jpg" class="rounded-circle" alt="profile picture">
+              </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-secondary">
+                <a class="dropdown-item waves-effect waves-light" href="#">Something 1</a>
+                <a class="dropdown-item waves-effect waves-light" href="#">Something 1</a>
+                <a class="dropdown-item waves-effect waves-light" href="#">Something 1</a>
+              </div>
+            </li>
+          </ul>
         </div>
       </nav>
 
@@ -374,6 +403,7 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script src="js/mdb.js"></script>
   <!-- Custom script -->
   <script src="./js/scripts.js"></script>
 </body>
