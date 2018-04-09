@@ -148,31 +148,31 @@
                     <td>GEL4101</td>
                     <td>Environmental Science</td>
                     <td>1</td>
-                    <td>A</td>
+                    <td class="grade">A</td>
                   </tr>
                   <tr>
                     <td>CSP4869</td>
                     <td>Problem Solving Techniques Using C</td>
                     <td>4</td>
-                    <td>A+</td>
+                    <td class="grade">A+</td>
                   </tr>
                   <tr>
                     <td>CSP3213</td>
                     <td>Introduction to Crime Fighting</td>
                     <td>5</td>
-                    <td>B</td>
+                    <td class="grade">B</td>
                   </tr>
                   <tr>
                     <td>KDL4893</td>
                     <td>Superhero Landing</td>
                     <td>1</td>
-                    <td>F</td>
+                    <td class="grade">F</td>
                   </tr>
                   <tr>
                     <td>FDW8824</td>
                     <td>Introduction to Law</td>
                     <td>2</td>
-                    <td>A+</td>
+                    <td class="grade">A+</td>
                   </tr>
                 </tbody>
               </table>
@@ -234,6 +234,13 @@
   <script src="js/mdb.min.js"></script>
   <!-- Custom script -->
   <script src="./js/scripts.js"></script>
+  <script>
+    $('table tbody tr').each(function (index, row) {
+      if ($(this).children('td.grade')[0].textContent === 'F') {
+        $(this).addClass('table-danger');
+      }
+    });
+  </script>
 </body>
 
 </html>
