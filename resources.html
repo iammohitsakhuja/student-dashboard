@@ -18,10 +18,19 @@
   <!-- Custom stylesheet -->
   <link rel="stylesheet" href="./css/styles.css">
   <style>
-  .content .card {
-    width: 80%;
-    min-width: 250px;
-  }
+    .content .card {
+      width: 80%;
+    }
+
+    .content .card .card-deck .card {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 575px) {
+      .content .card {
+        width: 90%;
+      }
+    }
   </style>
 </head>
 
@@ -129,7 +138,114 @@
       <!-- Content -->
       <div class="content">
 
-        <!-- First card -->
+        <!-- First subject card -->
+        <article class="card card-cascade wider">
+          <section class="view overlay d-flex align-items-center justify-content-center pt-2 pb-2">
+            <img src="./img/teachers/emma-stone.jpeg" class="rounded-circle" alt="Profile picture" height="60px" width="60px">
+            <h4 class="card-header">Emma Stone</h4>
+          </section>
+
+          <section class="card-body">
+            <!-- First card deck -->
+            <section class="card-deck">
+              <section class="card">
+                <section class="view overlay p-3 text-center">
+                  <h6 class="indigo-text darken-4">
+                    <i class="fas fa-sticky-note"></i>
+                    Notes
+                  </h6>
+                  <p class="card-text">Chapter 1</p>
+                  <button class="btn btn-indigo">Download</button>
+                </section>
+              </section>
+              <section class="card">
+                <section class="view overlay p-3 text-center">
+                  <h6 class="indigo-text darken-4">
+                    <i class="fas fa-sticky-note"></i>
+                    Notes
+                  </h6>
+                  <p class="card-text">Chapter 2</p>
+                  <button class="btn btn-indigo">Download</button>
+                </section>
+              </section>
+            </section>
+          </section>
+        </article>
+
+        <!-- Second subject card -->
+        <article class="card card-cascade wider">
+          <section class="view overlay d-flex align-items-center justify-content-center pt-2 pb-2">
+            <img src="./img/teachers/lalu.jpeg" class="rounded-circle" alt="Profile picture" height="60px" width="60px">
+            <h4 class="card-header">Lalu Prasad Yadav</h4>
+          </section>
+
+          <section class="card-body">
+            <section class="card-deck">
+              <section class="card">
+                <section class="view overlay p-3 text-center">
+                  <h6 class="red-text darken-4">
+                    <i class="fab fa-youtube"></i>
+                    Video
+                  </h6>
+                  <p class="card-text">Politics in Machine Learning</p>
+                  <button class="btn btn-danger">Watch video</button>
+                </section>
+              </section>
+              <section class="card">
+                <section class="view overlay p-3 text-center">
+                  <h6 class="indigo-text darken-4">
+                    <i class="fas fa-sticky-note"></i>
+                    Notes
+                  </h6>
+                  <p class="card-text">How to be a leader</p>
+                  <button class="btn btn-indigo">Download</button>
+                </section>
+              </section>
+              <section class="card">
+                <section class="view overlay p-3 text-center">
+                  <h6 class="darken-4">
+                    <i class="fas fa-book"></i>
+                    Book
+                  </h6>
+                  <p class="card-text">Anand Kumar Book</p>
+                  <button class="btn btn-elegant">Download illegal pdf</button>
+                </section>
+              </section>
+              <section class="card">
+                <section class="view overlay p-3 text-center">
+                  <h6 class="pink-text darken-4">
+                    <i class="fas fa-file-alt"></i>
+                    Assignment
+                  </h6>
+                  <p class="card-text">K-Map assignment</p>
+                  <button class="btn btn-unique">Download assignment</button>
+                </section>
+              </section>
+              <section class="card">
+                <section class="view overlay p-3 text-center">
+                  <h6 class="red-text darken-4">
+                    <i class="fab fa-youtube"></i>
+                    Video
+                  </h6>
+                  <p class="card-text">Speech giving robot</p>
+                  <button class="btn btn-danger">Watch video</button>
+                </section>
+              </section>
+              <section class="card">
+                <section class="view overlay p-3 text-center">
+                  <h6 class="deep-orange-text darken-4">
+                    <i class="fas fa-file-powerpoint"></i>
+                    Powerpoint Presentation
+                  </h6>
+                  <p class="card-text">A good teacher</p>
+                  <button class="btn btn-deep-orange">Download ppt</button>
+                </section>
+              </section>
+            </section>
+          </section>
+        </article>
+
+        <!-- Third subject card -->
         <article class="card card-cascade wider">
           <section class="view overlay d-flex align-items-center justify-content-center pt-2 pb-2">
             <img src="./img/teachers/alexandra.jpeg" class="rounded-circle" alt="Profile picture" height="60px" width="60px">
@@ -137,21 +253,88 @@
           </section>
 
           <section class="card-body">
-            <!-- first card deck -->
             <section class="card-deck">
               <section class="card">
-                <section class="view overlay p-4">
-                  <p class="card-text">This is card 1</p>
+                <section class="view overlay p-3 text-center">
+                  <h6 class="deep-orange-text darken-4">
+                    <i class="fas fa-file-powerpoint"></i>
+                    Powerpoint Presentation
+                  </h6>
+                  <p class="card-text">Flora &amp; Fauna in a Rainforest</p>
+                  <button class="btn btn-deep-orange">Download ppt</button>
                 </section>
               </section>
               <section class="card">
-                <section class="view overlay p-4">
-                  <p class="card-text">This is card 1</p>
+                <section class="view overlay p-3 text-center">
+                  <h6 class="darken-4">
+                    <i class="fas fa-book"></i>
+                    Book
+                  </h6>
+                  <p class="card-text">Biology for Dummies!</p>
+                  <button class="btn btn-elegant">Download pdf</button>
                 </section>
               </section>
               <section class="card">
-                <section class="view overlay p-4">
-                  <p class="card-text">This is card 1</p>
+                <section class="view overlay p-3 text-center">
+                  <h6 class="indigo-text darken-4">
+                    <i class="fas fa-sticky-note"></i>
+                    Notes
+                  </h6>
+                  <p class="card-text">Man vs Wild</p>
+                  <button class="btn btn-indigo">Download</button>
+                </section>
+              </section>
+            </section>
+          </section>
+        </article>
+
+        <!-- Fourth subject card -->
+        <article class="card card-cascade wider">
+          <section class="view overlay d-flex align-items-center justify-content-center pt-2 pb-2">
+            <img src="./img/teachers/snoop-dogg.png" class="rounded-circle" alt="Profile picture" height="60px" width="60px">
+            <h4 class="card-header">Snoop Dogg</h4>
+          </section>
+
+          <section class="card-body">
+            <section class="card-deck">
+              <section class="card">
+                <section class="view overlay p-3 text-center">
+                  <h6 class="pink-text darken-4">
+                    <i class="fas fa-file-alt"></i>
+                    Assignment
+                  </h6>
+                  <p class="card-text">Art of Living amongst Trees</p>
+                  <button class="btn btn-unique">Download assignment</button>
+                </section>
+              </section>
+              <section class="card">
+                <section class="view overlay p-3 text-center">
+                  <h6 class="deep-purple-text darken-4">
+                    <i class="far fa-newspaper"></i>
+                    Article
+                  </h6>
+                  <p class="card-text">Everything to know about Cannabis</p>
+                  <a href="https://hightimes.com/guides/marijuana-cannabis/" class="btn btn-deep-purple" role="button" target="_blank">View article</a>
+                </section>
+              </section>
+              <section class="card">
+                <section class="view overlay p-3 text-center">
+                  <h6 class="red-text darken-4">
+                    <i class="fab fa-youtube"></i>
+                    Video
+                  </h6>
+                  <p class="card-text">Thug Life</p>
+                  <a href="https://www.youtube.com/watch?v=QZXc39hT8t4" class="btn btn-danger" role="button" target="_blank">Watch video</a>
+                </section>
+              </section>
+              <section class="card">
+                <section class="view overlay p-3 text-center">
+                  <h6 class="red-text darken-4">
+                    <i class="fab fa-youtube"></i>
+                    Video
+                  </h6>
+                  <p class="card-text">Praise for other cultures</p>
+                  <a href="https://www.youtube.com/watch?v=Ar4CJKf1LwE" class="btn btn-danger" role="button" target="_blank">Watch video</a>
                 </section>
               </section>
             </section>
