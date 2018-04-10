@@ -22,6 +22,22 @@
       min-width: 900px;
       width: 85%;
     }
+
+    /* Scrollbar styling */
+
+    body::-webkit-scrollbar {
+      width: 9px;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-image: linear-gradient(40deg, #59c0e6, #0f1435);
+    }
+
+    body::-webkit-scrollbar-track {
+      background-color: rgb(230, 223, 223);
+      border-radius: 10px;
+    }
   </style>
 </head>
 
@@ -32,7 +48,7 @@
     <nav id="sidebar" class="navbar sticky-top">
       <div class="navbar-header">
         <img src="./img/face-1.jpg" class="rounded-circle" alt="Profile picture">
-        <h5 class="navbar-brand m-1 text-white">Student #34</h5>
+        <h5 class="navbar-brand m-1 text-white pl-2">Dr. Drake Ramoray</h5>
       </div>
 
       <!-- Navbar links -->
@@ -104,8 +120,8 @@
             </li>
             <li class="nav-item">
               <a class="nav-link waves-effect waves-light" href="#">
-                <i class="fas fa-beer"></i>
-                <span>Button</span>
+                <i class="fas fa-credit-card"></i>
+                <span>Gate Pass</span>
               </a>
             </li>
             <li class="nav-item dropdown">
@@ -113,7 +129,7 @@
                 <img src="img/face-1.jpg" class="rounded-circle" alt="profile picture">
               </a>
               <div class="dropdown-menu dropdown-menu-right dropdown-menu-secondary">
-                <a class="dropdown-item waves-effect waves-light" href="#">Gate Pass</a>
+                <a class="dropdown-item waves-effect waves-light" href="#">Profile</a>
                 <a class="dropdown-item waves-effect waves-light" href="#">Feedback</a>
                 <a class="dropdown-item waves-effect waves-light" href="#">Log Out</a>
               </div>

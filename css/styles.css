@@ -2,6 +2,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: rgb(241, 241, 241);
 }
 
 /* Global */
@@ -30,6 +31,10 @@ html {
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 2, 7, 0.8));
+}
+
+#sidebar .navbar-header .navbar-brand {
+  font-family: lobster;
 }
 
 #sidebar .navbar-nav {
@@ -164,4 +169,9 @@ main {
   .content .card {
     width: calc(100% - 25px);
   }
+}
+
+@font-face {
+  font-family: lobster;
+  src: url("../font/Lobster/Lobster-Regular.ttf");
 }
