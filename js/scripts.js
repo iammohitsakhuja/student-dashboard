@@ -29,6 +29,7 @@ function toggle_sidebar() {
 /* Show sidebar */
 function show_sidebar() {
 	$("#sidebar").css("display", "flex");
+	$(".wrapper").css("display", "grid");
 	$(".wrapper").css("grid-template-columns", "270px 1fr");
 	$(".wrapper").css("grid-template-areas", "'sidebar main'");
 }
@@ -36,6 +37,7 @@ function show_sidebar() {
 /* Hide sidebar */
 function hide_sidebar() {
 	$("#sidebar").css("display", "none");
+	$(".wrapper").css("display", "unset");
 	$(".wrapper").css("grid-template-columns", "none");
 	$(".wrapper").css("grid-template-areas", "'main'");
 }

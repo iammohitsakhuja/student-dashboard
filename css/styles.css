@@ -21,14 +21,20 @@ html {
   flex-direction: column;
   align-items: stretch;
   justify-content: flex-start;
-  background-image: linear-gradient(rgba(1, 7, 46, 0.4), rgba(3, 38, 114, 0.7)), url("../img/sidebar-4.jpg");
+  padding: 0 !important;
+  background-image: linear-gradient(rgba(0, 0, 2, 0.8), rgba(0, 0, 0, 1));
 }
 
 #sidebar .navbar-header {
-  /* text-align: center; */
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 62px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 2, 7, 0.8));
+}
+
+#sidebar .navbar-nav {
+  margin: 30px 15px;
 }
 
 #sidebar .navbar-header img {
@@ -54,6 +60,7 @@ html {
 
 #sidebar .nav-link.dropdown-toggle::after {
   margin-top: 8px;
+  margin-left: 10px;
 }
 
 /* Main Section */
@@ -72,7 +79,7 @@ main {
   display: flex;
   margin-bottom: 30px;
   line-height: 1.8;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 2, 7, 0.8));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
   height: min-content;
 }
 
@@ -150,6 +157,7 @@ main {
   }
 
   .wrapper {
+    display: unset;
     grid-template-columns: none;
     grid-template-areas: main;
   }
