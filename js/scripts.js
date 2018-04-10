@@ -1,17 +1,26 @@
-// execute when DOM is fully loaded
+// Execute when DOM is fully loaded
 $(function () {
 
+	// set height of sidebar header to match topbar
+	$("#sidebar .navbar-header").css("height", $("#topbar").css("height"));
+	
 	// detect resize of window
 	$(window).resize(function () {
 		var width = $(window).width();
-		if (width < 768) {
+
+		// toggle sidebar on resize
+		if (width < 752) {
 			hide_sidebar();
 		}
 		else {
 			show_sidebar();
 		}
+
+		// set height of sidebar header to match topbar
+		$("#sidebar .navbar-header").css("height", $("#topbar").css("height"));
 	});
-	// toggle sidebar
+
+	// toggle sidebar on click
 	$("#topbar-toggler").click(toggle_sidebar);
 });
 

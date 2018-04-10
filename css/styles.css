@@ -29,7 +29,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 62px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 2, 7, 0.8));
 }
 
@@ -60,7 +59,7 @@ html {
 
 #sidebar .nav-link.dropdown-toggle::after {
   margin-top: 8px;
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
 /* Main Section */
@@ -150,7 +149,7 @@ main {
 }
 
 /* Hide sidebar on smaller devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
   #sidebar {
     display: none;
