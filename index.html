@@ -17,6 +17,22 @@
   <link rel="stylesheet" href="./css/mdb.min.css">
   <!-- Custom stylesheet -->
   <link rel="stylesheet" href="./css/styles.css">
+  <style>
+    .card.profile-card {
+      width: 100%;
+      margin: 0;
+    }
+
+    #profileModal .modal-content,
+    #profileModal .modal-content .modal-body,
+    #profileModal .modal-content .modal-body .card.profile-card {
+      border-radius: 10px;
+    }
+
+    #profileModal .modal-content .modal-body .card.profile-card img {
+      border-radius: 10px 10px 0 0;
+    }
+  </style>
 </head>
 
 <body>
@@ -164,7 +180,51 @@
             </p>
           </section>
           <section class="card-footer text-right">
-            <button class="btn btn-light-green accent-3">View profile</button>
+            <button class="btn btn-light-green accent-3" data-toggle="modal" data-target="#profileModal">View profile</button>
+          </section>
+        </article>
+
+        <!-- Alexandra Daddario profile modal -->
+        <article class="modal fade bottom" id="profileModal" tabindex="-1" aria-hidden="true">
+          <section class="modal-dialog">
+            <section class="modal-content">
+              <section class="modal-body p-0">
+                <section class="card profile-card">
+                  <section class="view overlay">
+                    <img class="img-fluid" src="./img/teachers/alexandra-modal.jpg" alt="Profile picture of Alexandra Daddario">
+                    <a>
+                      <div class="mark rgba-white-slight"></div>
+                    </a>
+                  </section>
+                  <section class="card-body pb-0">
+                    <a href="https://www.facebook.com/alexandra.daddario.5439/" class="activator black-text p-3 mr-2 mt-1">
+                      <i class="fab fa-facebook-square fa-lg"></i>
+                    </a>
+                    <h4 class="card-title">Alexandra Daddario</h4>
+                    <hr>
+                    <p class="card-text">
+                      <em>I Instagram and tweet a lot about my dog.</em>
+                    </p>
+                    <p class="card-text">Alexandra is the newest PhD. teacher to join our university. She specializes in Biology and Life Rescue
+                      operations.</p>
+                    <h5 class="card-title dark-grey-text">Her qualifications:</h5>
+                    <ul class="list-group mb-3">
+                      <li class="list-group-item p-2">PhD. in Biology</li>
+                      <li class="list-group-item p-2">Double PhD. in Life Rescue Operations</li>
+                      <li class="list-group-item p-2">Graduate in Hypnotism</li>
+                    </ul>
+                    <a href="https://en.wikipedia.org/wiki/Alexandra_Daddario" class="link-text black-text">
+                      <h5>Read more
+                        <i class="fa fa-chevron-right"></i>
+                      </h5>
+                    </a>
+                  </section>
+                </section>
+              </section>
+              <section class="modal-footer d-flex justify-content-center align-items-center">
+                <button class="btn btn-outline-elegant btn-rounded my-0" data-dismiss="modal">Close</button>
+              </section>
+            </section>
           </section>
         </article>
 
